@@ -1,2 +1,0 @@
-Your API token
-40b303fa8e2f6cd5164d68344b6d86b888b51a5e
