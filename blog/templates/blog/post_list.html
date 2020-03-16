@@ -1,3 +1,13 @@
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js"></script>
+<script>
+	$(function() {
+		$.datepicker.setDefaults($.datepicker.regional["ja"]);
+		$("#input1").datepicker();
+	});
+</script>
 <html>
     <head>
         <title>Djangoで作ってみたblog</title>
@@ -15,5 +25,6 @@
         xyz
     {% endfor %}
     abc
+    <p>年月日: <input type="text" id="input1" /></p>
     </body>
 </html>
